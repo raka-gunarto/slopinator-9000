@@ -1,0 +1,48 @@
+{
+  "name": "slopinator-9000",
+  "version": "1.0.0",
+  "description": "Autonomous idea-to-deployment pipeline. Velocity over everything else.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "slopinator-9000": "tsx src/index.ts",
+    "test": "jest --config jest.config.cjs",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "keywords": [
+    "automation",
+    "ai",
+    "github",
+    "velocity-coding",
+    "idea-generator"
+  ],
+  "author": "Slopinator-9000",
+  "license": "MIT",
+  "dependencies": {
+    "@mariozechner/pi-coding-agent": "^0.52.12",
+    "@octokit/rest": "^22.0.1",
+    "@types/node": "^25.2.3",
+    "consola": "^3.4.2",
+    "dotenv": "^17.3.1",
+    "p-queue": "^9.1.0",
+    "p-retry": "^7.1.1",
+    "puppeteer": "^24.37.3",
+    "tsx": "^4.21.0",
+    "twitter-api-v2": "^1.29.0",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "@typescript-eslint/parser": "^8.55.0",
+    "eslint": "^9.39.2",
+    "jest": "^30.2.0",
+    "prettier": "^3.8.1",
+    "ts-jest": "^29.4.6"
+  }
+}
